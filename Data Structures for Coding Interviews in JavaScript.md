@@ -4,56 +4,91 @@
 
 #### Arrays
 - `push()` function
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - complexity of the `push()` operation will be O(1)
+            - only have to update the `length` of the array and add new element
+    - ![](img/1.01.001.jpg)
 - `pop()` function
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - complexity of the `pop()` operation will be O(1)
+            - only have to update the `length` of the array and remove one element
+    - ![](img/1.01.002.jpg)
 - `shift()` function
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - complexity of the `shift()` operation will be O(n) 
+            - have to ...
+                - remove the element at index 0
+                - shift all the elements to the left, 
+                - and update length of an array.
+    - ![](img/1.01.003.jpg)
 - `unshift(value)`
-    - 
-        - 
-    - 
-        - 
-
+    - Basic
+        - complexity of the `unshift()` operation will be O(n) 
+            - have to 
+                - update the length of an array
+                - shift all the elements to the right
+                - add the new element at index 0.
+    - ![](img/1.01.004.jpg)
 - `delete` keyword
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - Elements of an array can be deleted using `delete`
+            - However
+                - `delete` leaves undefined holes in the array
+                    - aka... `undefined`
+            - Better to use the shift() or pop() method.
+    - Complexity
+        - complexity of the `delete()` function will be O(n)
+            - have to ...
+                - remove the first element
+                - move all the following elements to the left.
+    - ![](img/1.01.005.jpg)
 - `reverse()` function
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - complexity of the reverse() function will be O(n) since we have to...
+            -  traverse all the elements of an array.
+    - ![](img/1.01.006.jpg)
 - `splice()` function
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - used to add or remove elements.
+        - first parameter is the **index number**, where the new elements should be spliced in
+            - index number
+            - where the new elements should be spliced in
+        - second parameter is the **number of elements** that should be removed
+            - put `0` if you don’t want to remove anything
+        - complexity
+            - O(n)
+                - worst-case, we have to shift n−1 elements.
+    - ![](img/1.01.007.jpg)
 - `slice()` function
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - used to slice out a piece of an array into a new array.3
+        - first parameter --> index number
+            - start of the slicing takes place
+        - second parameter --> index number
+            - up to which the array should be sliced out
+            - the new array excludes this index number
+                - if you want the very end of the array...
+                    - leave second parameter empty
+    - complexity of `slice()` function is O(n)
+        - to returns a new array,
+            - needs to run from the start to the end
+        - worst-case
+            - need to make a copy of all the elements present in the array
+    - ![](img/1.01.008.jpg)
 - `concat()` function
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - concatenate any number of arrays you want by..
+            - specifying all of them as parameters to `concat()` function.
+    - complexity
+        -  O(m+n)
+            - m is the size of the first array
+            - n is the size of the second array
+        - need to copy elemebts of both arrays **one by one** into a new array
+    - ![](img/1.01.009.jpg)
 - `for...of` statement 
-    - 
-        - 
-    - 
-        - 
+    - Basic
+        - conditional statement for looping through an array
+    - ![](img/1.01.010.jpg)
 
 #### var vs. let vs. const
 - 
