@@ -75,6 +75,11 @@
         - worst-case
             - need to make a copy of all the elements present in the array
     - ![](img/1.01.008.jpg)
+- `filter()` function
+    - Basic
+        - used to create a new array based on output of a function
+        - filters out elements that do not pass the function
+    - ![](img/1.03.00.jpg)
 - `concat()` function
     - Basic
         - concatenate any number of arrays you want by..
@@ -114,8 +119,46 @@
             - can be accessed throughout the function.
 
 #### Challenge 1: Remove Even Integers From an Array
-#### Solution Review: Remove Even Integers From an Array
+- Problem
+    - Problem Statement
+        - Implement a function `removeEven(arr)`
+            - takes an array arr in its input
+            - removes all the even elements from a given array.
+    - Input
+        - array with random integers.
+    - Output
+        - array with only odd integers
+    - Sample Input
+
+        ```[1,2,4,5,10,6,3]```
+    - Sample Output 
+        
+        ```[1,5,3]```
+    - Picture
+        - ![](img/1.03.005.jpg)
+- Coding Exercise 
+    - ![](img/1.03.006.jpg)
+
 #### Challenge 2: Merge Two Sorted Arrays
+- Problem
+    - Problem Statement
+        - Implement a function `removeEven(arr)`
+            - takes an array arr in its input
+            - removes all the even elements from a given array.
+    - Input
+        - array with random integers.
+    - Output
+        - array with only odd integers
+    - Sample Input
+
+        ```[1,2,4,5,10,6,3]```
+    - Sample Output 
+        
+        ```[1,5,3]```
+    - Picture
+        - ![](img/1.03.005.jpg)
+- Coding Exercise 
+    - ![](img/1.03.006.jpg)
 #### Solution Review: Merge Two Sorted Arrays
 #### Challenge 3: Find Two Numbers that Add up to "value"
 #### Solution Review: Find Two Numbers that Add up to "value"
