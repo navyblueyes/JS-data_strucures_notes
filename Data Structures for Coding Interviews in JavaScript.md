@@ -142,25 +142,70 @@
 #### Challenge 2: Merge Two Sorted Arrays
 - Problem
     - Problem Statement
-        - Implement a function `removeEven(arr)`
-            - takes an array arr in its input
-            - removes all the even elements from a given array.
+        - Implement a function `mergeArrays(arr1, arr2)`
+            - merges two sorted arrays
+                - into another sorted array
     - Input
-        - array with random integers.
+        - Two sorted arrays.
     - Output
-        - array with only odd integers
+        - consisting of all elements of both input arrays
     - Sample Input
 
-        ```[1,2,4,5,10,6,3]```
+        ```
+        arr1 = [1,3,4,5]  
+        arr2 = [2,6,7,8]
+        ```
+
     - Sample Output 
-        
-        ```[1,5,3]```
+        ```
+        arr = [1,2,3,4,5,6,7,8]
+        ```
     - Picture
-        - ![](img/1.03.005.jpg)
+        - ![](img/1.04.001.jpg)
 - Coding Exercise 
-    - ![](img/1.03.006.jpg)
-#### Solution Review: Merge Two Sorted Arrays
+    ```
+    function mergeArrays(arr1, arr2) {
+        let mergedArr = [];
+        let i=0;
+        let j=0;
+        if (arr1[0] == undefined) {
+            return arr2
+        }
+        if (arr2[0] == undefined){
+            return arr1
+        }
+        while(i < arr1.length && j < arr2.length) {
+            if(arr1[i] <= arr2[j]) {
+                mergedArr.push(arr1[i])
+                i++
+            }
+            if(arr1[i] >= arr2[j]) {
+                mergedArr.push(arr2[j])
+                j++
+            }
+        }
+        if (i < arr1.length) {
+            arr1.splice(0, i)
+            mergedArr = mergedArr.concat(arr1);
+        } else if (j < arr2.length) {
+            arr2.splice(0, j)
+            mergedArr = mergedArr.concat(arr2)
+    
+        }
+    
+        return mergedArr;
+    }
+    ```
+    
+    ```
+    function mergeArrays(arr1, arr2) {
+        return mergedArr = [...arr1, ...arr2].sort((a, b)=> a - b);
+    }
+    ```
+
+
 #### Challenge 3: Find Two Numbers that Add up to "value"
+    
 #### Solution Review: Find Two Numbers that Add up to "value"
 #### Challenge 4: Array of Products of All Elements
 #### Solution Review: Array of Products of All Elements
