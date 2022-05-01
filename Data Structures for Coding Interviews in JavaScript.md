@@ -91,16 +91,28 @@
     - ![](img/1.01.010.jpg)
 
 #### var vs. let vs. const
-- 
-    - 
-        - 
-    - 
-        - 
-- 
-    - 
-        - 
-    - 
-        - 
+- `const` Keyword
+    - `const` is block-scoped
+        - variable declared with `const` cannot be redeclared 
+    - ![](img/1.02.001.jpg)
+- var Keyword
+    - function-scoped 
+        - if declared anywhere else besides a function, 
+            - will exist in the global scope.
+        - ![](img/1.02.002.jpg)
+- let Keyword 
+    - block-scoped.
+        - cannot be redeclared within the block
+        - cannot be accessed outside the block
+    - ![](img/1.02.003.jpg)
+        - error because we initialized the `num` variable in the if-statement block
+        - As it has been declared using `let`, 
+            - we cannot access it outside the if block
+    - ![](img/1.02.004.jpg)
+        - works fine if... 
+            - we use var as they are function-scoped ... and 
+            - can be accessed throughout the function.
+
 #### Challenge 1: Remove Even Integers From an Array
 #### Solution Review: Remove Even Integers From an Array
 #### Challenge 2: Merge Two Sorted Arrays
