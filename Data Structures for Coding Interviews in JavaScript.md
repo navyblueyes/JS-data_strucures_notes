@@ -1,4 +1,4 @@
-# Data Structures for Coding Interviews in JavaScript
+# Data Structures for Coding Interviews in JavaScript -- Coderust
 
 ### Introduction to Arrays
 
@@ -205,8 +205,107 @@
 
 
 #### Challenge 3: Find Two Numbers that Add up to "value"
-    
+- Problem
+    - Problem Statement
+        - Implement a function `findSum(arr, value)`
+            - input
+                - takes an array `arr`, a number and `value`
+            - output
+                - array of two numbers that add up to value
+            - If no such pair found then simply return `false`.
+    - Input
+        - `array` and a number `value`
+    - Output
+        - array with two integers `a` and `b` ([`a`,`b`]) that add up to `value`
+    - Sample Input
+
+        ```
+        arr = [1,21,3,14,5,60,7,6]
+        value = 81
+        ```
+
+    - Sample Output 
+        ```
+        arr = [21,60]
+        ```
+    - Picture
+        - ![](img/1.05.001.jpg)
+- Coding Exercise 
+    ```
+    function findSum(arr,value){
+        let j = 1;
+        for(i=0;i<(arr.length-1);i++){
+            if (i==j && i<(arr.length-2)) {
+                i++;
+            }
+            for(j=1;j<(arr.length);j++){
+                if((arr[i]+arr[j])==value) {
+                    return [arr[i],arr[j]]
+                }
+                if(i==(arr.length-2) && j==(arr.length-1)) {
+                    return false
+                }
+            }
+        }
+    }
+    ```
+
+
 #### Solution Review: Find Two Numbers that Add up to "value"
+- Sorting Array Solution
+    ```  
+    function binarySearch(arr, item){
+       var first = 0, mid;
+       var last = arr.length - 1;
+       var found = false
+       var arrayIndex = -1
+       while( (first <= last) && !found){
+           mid = Math.floor((first + last) / 2)
+           if( arr[mid] == item){
+               arrayIndex = mid
+               found = true
+           }
+           else{
+               if(item < arr[mid])
+                   last = mid - 1
+               else
+                   first = mid + 1
+           }
+       }
+       if (found)
+            return arrayIndex
+        else
+            return false
+    }
+    
+    function findSum(arr,value){
+       arr.sort(function(a, b) {
+            return a - b
+        })
+        var index;
+        for(var j = 0; j<arr.length; j++){
+            index = binarySearch(arr,(value-arr[j]))
+            if(index!=false && j!=index)
+                return [arr[j],value-arr[j]]
+            }
+        return false;
+    }
+    
+    
+    console.log(findSum([1,2,3,4],5))
+    console.log(findSum([4,3,2,1],9))
+    ```
+    - better way to solve
+        - overview
+            - first sorting the array
+            - use a binary search for each element in an array
+    - time complexity
+        - each step
+            - binary search for each element takes `O(logn)`
+            - binary search for all nnn elements will take `O(nlogn)`
+        - overall time complexity
+            - `O(nlogn)`
+        
 #### Challenge 4: Array of Products of All Elements
 #### Solution Review: Array of Products of All Elements
 #### Challenge 5: Find Minimum Value in Array
