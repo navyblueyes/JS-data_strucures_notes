@@ -305,8 +305,85 @@
             - binary search for all nnn elements will take `O(nlogn)`
         - overall time complexity
             - `O(nlogn)`
-        
+- Moving indices Solution
+    ```
+    function findSum(arr, value) {
+    
+        arr.sort(function(a, b) {
+            return a - b
+        })
+    
+        var index1 = 0,
+            index2 = arr.length - 1,
+            result = [],
+            sum = 0;
+    
+        while (index1 != index2) {
+            sum = arr[index1] + arr[index2]
+    
+            if (sum < value) {
+                index1++;
+            } else if (sum > value) {
+                index2--;
+            } else {
+                result.push(arr[index1]);
+                result.push(arr[index2]);
+                return result;
+    
+            }
+        }
+      return false;
+    }
+    
+    
+    console.log(findSum([1,2,3,4],5))
+    console.log(findSum([1,2,3,4],10))
+    ```
+    - overview
+        - first sorting the array
+        - use two variables
+            - one starting from the first index of the array 
+            - second from size-1 index of the array
+        - if sum of elements is smaller than `value` ... then...
+            - increment index from the start 
+        - if greater than `value`... then ... 
+            - decrement index from the end
+                - until the given value is not equal to the sum. 
+        - Store elements on these indexes in result array and return it.
+    - time complexity
+        - worst-case scenario
+            - entire array iterated from opposite ends would take `O(n)` 
+                - solution is in `O(nlog(n))`
+
 #### Challenge 4: Array of Products of All Elements
+- Problem
+    - Problem Statement
+        - Implement a function `findProduct(arr)`
+            - modifies an array so that ...
+                - each index has a product of all the numbers present in the array 
+                    - ...except the number stored at that index.
+            - array should be greater than / equal to 2
+    - Input
+        - array of numbers (can even be floats, integers, and negative!)
+    - Output
+        - array that each index has a product of all the numbers in the array 
+            - except the number stored at that index.
+    - Sample Input
+
+        ```
+        arr = [1,2,3,4]
+        ```
+
+    - Sample Output 
+        ```
+        arr = [2*3*4, 1*3*4, 1*2*4, 1*2*3]
+        arr = [24,12,8,6]
+        ```
+    - Picture
+        - ![](img/1.06.001.jpg)
+- Coding Exercise
+    ```
+    ```
 #### Solution Review: Array of Products of All Elements
 #### Challenge 5: Find Minimum Value in Array
 #### Solution Review: Find Minimum Value in Array
