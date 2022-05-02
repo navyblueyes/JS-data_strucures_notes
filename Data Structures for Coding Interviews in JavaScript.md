@@ -383,8 +383,25 @@
         - ![](img/1.06.001.jpg)
 - Coding Exercise
     ```
+    function findProduct(arr) {
+        let newArr = [];
+        let left = 1;
+        for(i=0;i<arr.length;i++) {
+            let current = 1;
+            for(j=1+i;j<arr.length;j++) {
+                current = current * arr[j];
+            }
+            newArr.push(current * left);
+            left = left * arr[i];
+            }
+        return newArr;
+    }
     ```
+
 #### Solution Review: Array of Products of All Elements
+
+
+
 #### Challenge 5: Find Minimum Value in Array
 #### Solution Review: Find Minimum Value in Array
 #### Challenge 6: Find First Unique Integer in an Array
