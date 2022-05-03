@@ -399,8 +399,24 @@
     ```
 
 #### Solution Review: Array of Products of All Elements
-
-
+- Optimized solution
+    - calculate product of all elements and store it into `temp`
+        - ![](img/1.06.002.jpg)
+            ```
+            for (var i = 0; i < arr.length ; i++) {
+                product[i]  = temp;
+                temp = temp * arr[i];
+            }
+            ```
+    - traverse from the end and multiply product of all number 
+        - ![](img/1.06.003.jpg)
+            ```
+            temp = 1;
+            for (var i = arr.length - 1; i > -1; i-- ) {
+                product[i] *= temp;
+                temp *= arr[i];
+            }
+            ```
 
 #### Challenge 5: Find Minimum Value in Array
 #### Solution Review: Find Minimum Value in Array
