@@ -397,6 +397,11 @@
         return newArr;
     }
     ```
+    - Time Complexity
+        - only traverses over the array twice 
+            - so the complexity expression is `n+n`
+            - final term becomes `O(n)`
+
 
 #### Solution Review: Array of Products of All Elements
 - Optimized solution
@@ -419,7 +424,49 @@
             ```
 
 #### Challenge 5: Find Minimum Value in Array
+- Problem
+    - Problem Statement
+        - Implement a function `findMinimum(arr)`
+            - Finds the smallest number in the given array.
+    - Input
+        - array of integers
+    - Output
+        - smallest number in the array
+    - Sample Input
+
+        ```
+        arr = [9,2,3,6]
+        ```
+
+    - Sample Output 
+        ```
+        2
+        ```
+    - Picture
+        - ![](img/1.09.001.jpg)
+- Coding Exercise
+    ```
+    function findMinimum(arr) {
+        let lowest=arr[0];
+
+        for(i=1;i<arr.length;i++){
+           if(arr[i]<lowest) {
+             lowest=arr[i]
+           }
+        }
+        return lowest;
+    }
+    ```
+
 #### Solution Review: Find Minimum Value in Array
+    ```
+    function findMinimum(arr) {
+        arr.sort((function(a, b){
+            return a - b
+        }))
+        return arr[0]
+    }
+    ```
 #### Challenge 6: Find First Unique Integer in an Array
 #### Solution Review: First First Unique Integer in an Array
 #### Challenge 7: Find Second Maximum Value in an Array
