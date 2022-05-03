@@ -467,19 +467,181 @@
         return arr[0]
     }
     ```
+- Time Complexity
+    - sort functions is O(nlogn)O(nlogn)O(
+    - only return first value from an array so it will take constant time operation
+
 #### Challenge 6: Find First Unique Integer in an Array
+- Problem
+    - Problem Statement
+        - Implement a function `findMinimum(arr)`
+            - 
+    - Input
+        - 
+    - Output
+        - 
+    - Sample Input
+
+        ```
+        
+        ```
+
+    - Sample Output 
+
+        ```
+        2
+        ```
+
+    - Picture
+        - 
+- Coding Exercise
+    ```
+    
+    ```
+
 #### Solution Review: First First Unique Integer in an Array
 #### Challenge 7: Find Second Maximum Value in an Array
+- Problem
+    - Problem Statement
+        - Implement a function `findMinimum(arr)`
+            - 
+    - Input
+        - 
+    - Output
+        - 
+    - Sample Input
+
+        ```
+        
+        ```
+
+    - Sample Output 
+
+        ```
+        2
+        ```
+
+    - Picture
+        - 
+- Coding Exercise
+    ```
+    
+    ```
 #### Solution Review: Find Second Maximum Value in an Array
 #### Challenge 8: Right Rotate an Array by n
+- Problem
+    - Problem Statement
+        - Implement a function `findMinimum(arr)`
+            - 
+    - Input
+        - 
+    - Output
+        - 
+    - Sample Input
+
+        ```
+        
+        ```
+
+    - Sample Output 
+
+        ```
+        2
+        ```
+
+    - Picture
+        - 
+- Coding Exercise
+    ```
+    
+    ```
 #### Solution Review: Right Rotate an Array by n
 #### Challenge 9: Rearrange Positive & Negative Values
+- Problem
+    - Problem Statement
+        - Implement a function `findMinimum(arr)`
+            - 
+    - Input
+        - 
+    - Output
+        - 
+    - Sample Input
+
+        ```
+        
+        ```
+
+    - Sample Output 
+
+        ```
+        2
+        ```
+
+    - Picture
+        - 
+- Coding Exercise
+    ```
+    
+    ```
 #### Solution Review: Rearrange Positive & Negative Values
 #### Challenge 10: Rearrange Sorted Array in Max/Min Form
+- Problem
+    - Problem Statement
+        - Implement a function `findMinimum(arr)`
+            - 
+    - Input
+        - 
+    - Output
+        - 
+    - Sample Input
+
+        ```
+        
+        ```
+
+    - Sample Output 
+
+        ```
+        2
+        ```
+
+    - Picture
+        - 
+- Coding Exercise
+    ```
+    
+    ```
 #### Solution Review: Rearrange Sorted Array in Max/Min Form
 #### Challenge 11: Maximum Sum Subarray
+- Problem
+    - Problem Statement
+        - Implement a function `findMinimum(arr)`
+            - 
+    - Input
+        - 
+    - Output
+        - 
+    - Sample Input
+
+        ```
+        
+        ```
+
+    - Sample Output 
+
+        ```
+        2
+        ```
+
+    - Picture
+        - 
+- Coding Exercise
+    ```
+    
+    ```
 #### Solution Review: Maximum Sum Subarray
 #### Arrays Quiz: Test Your Understanding of Arrays
+
 
 ### Introduction to Linked Lists
 ### Introduction to Stack/Queues
