@@ -724,12 +724,70 @@
         console.log(list.isEmpty());
         ```
 
-##### 2.03 Singly Linked List Insertion
-- 
+##### 2.03 Singly Linked List - Types of Insertion
+- Insertion at Head
+    - Implementation
+        - Runs if...
+            - inserting first node
+            - inserting node... only at the `head`
+        - What you need to know...
+            - if inserting for first time
+                - need to check if head is `null` 
+                - insert node
+                - assign `head` to newly inserted node
+                - assign `tail` to newly inserted node
+            - if not first time
+                - insert node
+                - assign `head` to newly inserted node
+    - steps
+        - ![](img/2.03.008.jpg)
+        - ![](img/2.03.009.jpg)
+        - ![](img/2.03.010.jpg)
+        - ![](img/2.03.011.jpg)
+        - ![](img/2.03.012.jpg)
+        - ![](img/2.03.013.jpg)
+- Insertion at Tail
+    - Implementation
+        - 
+            - 
+        - 
+            - 
+    - steps
+        - ![](img/2.03.001.jpg)
+        - ![](img/2.03.002.jpg)
+        - ![](img/2.03.007.jpg)
+        - ![](img/2.03.003.jpg)
+        - ![](img/2.03.004.jpg)
+        - ![](img/2.03.005.jpg)
+        - ![](img/2.03.006.jpg)
+    - 
+        - 
+- Insert at the N-th Node
     - 
         - 
     - 
         - 
+- Implementation
+    - 
+        - 
+    - 
+        - 
+- Explanation
+    - 
+        - 
+    - 
+        - 
+- insertAtHead()
+    - 
+        - 
+    - 
+        - 
+- Time Complexity 
+    - 
+        - 
+    - 
+        - 
+
 ##### 2.04 Challenge 1: Insertion at Tail
 - 
     - 
