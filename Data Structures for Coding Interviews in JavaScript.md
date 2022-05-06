@@ -474,26 +474,27 @@
 #### Challenge 6: Find First Unique Integer in an Array
 - Problem
     - Problem Statement
-        - Implement a function `findMinimum(arr)`
-            - 
+        - Implement a function `findFirstUnique(arr)`
+            - returns the first unique integer in the array
+            - return `null` if no unique number is found.
     - Input
-        - 
+        - array of integers
     - Output
-        - 
+        - first unique element in the array
     - Sample Input
-
+    
         ```
-        
+        [9,2,3,2,6,6]
         ```
 
     - Sample Output 
 
         ```
-        2
+        9
         ```
 
     - Picture
-        - 
+        - ![](img/1.10.001.jpg)
 - Coding Exercise
     ```
     
@@ -643,11 +644,231 @@
 #### Arrays Quiz: Test Your Understanding of Arrays
 
 
-### Introduction to Linked Lists
-### Introduction to Stack/Queues
-### Introduction to Graphs
-### Introduction to Trees
-### Trie
-### Introduction to Heap
-### Introduction to Hashing
+### 2.0 Introduction to Linked Lists
+##### 2.01 Singly Linked Lists (SLL)
+- Introduction
+    - No such thing as a built-in linked list
+- Structure of a Singly Linked List
+    - Basic Structure
+        - ![](img/2.01.001.jpg)
+    - Consist of...
+        - Nodes that are linked via pointers
+            - if only one pointer... unidirectional... singly linked list
+    - Two things need to be written to form a linked list...
+        - Node class
+        - LinkedList class
+- 1. Node Class
+    - Consist of two things
+        - Data `data`
+        - Pointer `nextElement`
+            ```
+            class Node {
+              constructor(data) {
+                this.data = data;
+                this.nextElement = null;
+              }
+            }
+            ```
+- 2. LinkedList Class 
+    - Consist of..
+        - collection of nodes
+        - `head`
+    - Need a constructor
+        - to establish the variable... even if `null`
+            ```
+            class LinkedList {
+             constructor(){
+               // head will be at the top of the list
+               this.head = null; 
+              }
+            }
+            ```
+    - 
+        - 
+
+##### 2.02 Basic Linked List Operations
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.03 Singly Linked List Insertion
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.04 Challenge 1: Insertion at Tail
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.05 Solution Review: Insertion at Tail
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.06 Challenge 2: Search in a Singly Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.07 Solution Review: Search in a Singly Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.08 Singly Linked List Deletion
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.09 Challenge 3: Deletion by Value
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.10 Solution Review: Deletion by Value
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.11 Deletion at the Tail
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.12 Linked Lists vs. Arrays
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.13 Challenge 4: Find the Length of a Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.14 Solution Review: Find the Length of a Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.15 Challenge 5: Reverse a Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.16 Solution Review: Reverse a Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.17 Challenge 6: Detect Loop in a Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.18 Solution Review: Detect a Loop in a Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.19 Challenge 7: Find Middle Node of Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.20 Solution Review: Find Middle Node of a Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+- 
+    - 
+        - 
+    - 
+        - 
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.21 Challenge 8: Remove Duplicates from Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.22 Solution Review: Remove Duplicates from a Linked List
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.23 Challenge 9: Union & Intersection of Linked Lists
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.24 Solution Review: Union and Intersection of Linked Lists
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.25 Challenge 10: Return the Nth Node from the End
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.26 Solution Review: Return the Nth Node from the End
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.27 Doubly Linked Lists (DLL)
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.28 Singly Linked Lists vs. Doubly Linked Lists
+- 
+    - 
+        - 
+    - 
+        - 
+##### 2.29 Linked Lists Quiz: Test Your Understanding of Linked Lists
+- 
+    - 
+        - 
+    - 
+        - 
+
+### 3.0 Introduction to Stack/Queues
+### 4.0 Introduction to Graphs
+### 5.0 Introduction to Trees
+### 6.0 Trie
+### 7.0 Introduction to Heap
+### 8.0 Introduction to Hashing
 ### Summary of Data Structures
