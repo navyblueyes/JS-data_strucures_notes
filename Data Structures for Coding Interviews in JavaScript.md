@@ -683,15 +683,47 @@
               }
             }
             ```
-    - 
-        - 
 
 ##### 2.02 Basic Linked List Operations
-- 
-    - 
-        - 
-    - 
-        - 
+- Introduction
+    - Primary Operations
+        - `insertAtTail(data)` 
+            - inserts an node at the end of the linked list
+        - `insertAtHead(data)`
+            - inserts an node at the beginning of the linked list
+        - `delete(data)`
+            - deletes node with specified `data` value
+        - `deleteAtHead()`
+            - deletes the first node of the list
+        - `search(data)`
+            - searches for node with specified `data` value
+        - `isEmpty()`
+            - returns `true` of linked list is empty
+- `isEmpty()`
+    - Quick to implement
+        - run the `LinkedList` at the `index.js` level
+        - attach a method by running the `prototype.isEmpty()`
+            - have the method check for the instance's `head`
+                - and return true if `null`
+                - or... `== null`
+    - `index.js`
+        ```
+        "use strict";
+
+        // generate LinkedList and Node
+        const LinkedList = require('./LinkedList.js');
+        const Node = require('./Node.js');
+
+        // attach `isEmpty` by using `prototype`
+        LinkedList.prototype.isEmpty = function() {
+          // return true if null... or == null
+          return (this.head == null); 
+        }
+        
+        let list = new LinkedList();
+        console.log(list.isEmpty());
+        ```
+
 ##### 2.03 Singly Linked List Insertion
 - 
     - 
